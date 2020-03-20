@@ -4,8 +4,20 @@ app = Flask(__name__)
 
 
 @app.route('/')
+@app.route('/home')
 def index():
-    return render_template('index.html')
+    user = {'username' : 'Miguel'}
+    posts = [
+        {
+            'author' : {'username' : 'John'},
+            'body': 'Beautiful day in Portland!'
+        },
+        {
+            'author': {'username': 'Susan'},
+            'body': 'The avengers movie was so cool!'
+        }
+    ]
+    return render_template('index.html', title='Home', user=user, posts=posts)
 
 @app.route('/index.html')
 def root():
