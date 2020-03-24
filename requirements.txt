@@ -1,0 +1,5 @@
+Flask-Login
+flask
+flask_migrate
+flask_sqlalchemy
+flask_wtf
