@@ -14,12 +14,16 @@ def create_app(config):
     migrate = Migrate(app, db)
     #Imports blueprints
 
-    from app.routes import main
+    from webapp.routes import main
     app.register_blueprint(main)
 
     return app
 
+app = create_app(config)
+
 if __name__ == '__main__':
-    app = create_app(config)
-    app.run()
+    app.run(
+        host=app.config.get('HOST', '0.0.0.0'),
+        port=app.config.get('PORT', 5000)
+    )
 

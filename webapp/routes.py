@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, redirect, url_for, Blueprint
-from app.forms import LoginForm
+from webapp.forms import LoginForm
 
 main = Blueprint('main', __name__)
 
