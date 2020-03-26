@@ -1,4 +1,5 @@
-from webapp import db
+from ISA import db
+
 from datetime import datetime
 
 class User(db.Model):
@@ -10,6 +11,7 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
+
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
