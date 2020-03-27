@@ -5,4 +5,15 @@
     {% for post in posts %}
     <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
     {% endfor %}
+    <div class = "intro">
+        <p>Welcome to is this a phish, the online training tool for improving
+            awareness about phishing emails and how to avoid and identify them.
+            Protect your data with education.
+        </p>
+    </div>
+    <div class = "homesignin">
+    <button type = "signinbutton">Sign In</button>
+    <button type = "signupbutton">Sign Up</button>
+    </div>
+
 {% endblock %}

@@ -33,14 +33,31 @@
         text-decoration: underline;
     }
 
-    h1 {
-        padding: 0;
+    .intro {
+        font-size: 30px;
+        white-space: normal;
+        width: 900px;
+        margin-left: 210px;
+        margin-top: 200px;
+    }
+
+    .homesignin {
+        margin-left: 210px;
+        margin-top: 60px;
+    }
+    .signinbutton {
+        background-color: white;
+        font-size: 162px;
+    }
+
+    .signupbutton {
+        background-color: #FFFFFF;
     }
 
     form {
         padding: 0;
         text-align: center;
-        margin-top: 300px;
+        margin-top: 250px;
         margin-left: 700px;
         margin-right: 700px;
         border-style: solid;
