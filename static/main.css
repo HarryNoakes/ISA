@@ -42,16 +42,99 @@
     }
 
     .homesignin {
-        margin-left: 210px;
+        margin-left: 180px;
         margin-top: 60px;
+
     }
-    .signinbutton {
-        background-color: white;
-        font-size: 162px;
+    button.buttonStyle {
+        background-color: transparent;
+        font-size: 27px;
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+        margin-left: 30px;
+        width: 200px;
+        transition-duration: 0.4s;
     }
 
-    .signupbutton {
-        background-color: #FFFFFF;
+    button.buttonStyle:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    button.inboxBtn {
+        background-color: transparent;
+        font-size: 27px;
+        color: white;
+        border-style: none;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 400px;
+        transition-duration: 0.4s;
+    }
+
+    button.inboxBtn:hover {
+        /*text-decoration: underline;*/
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+/* irrelevant */
+    .training-bg {
+        position: absolute;
+        background-color: #444444;
+
+    }
+
+    .inboxpanel {
+        position: fixed;
+        width: 20%;
+        height: 90%;
+        top: 120px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #444444;
+        z-index: 2;
+    }
+
+    .emails {
+        position: fixed;
+        width: 40%;
+        height: 90%;
+        top: 120px;
+        left: 384px;
+        right: 0;
+        bottom: 0;
+        background-color: #2d2d2d;
+        z-index: 2;
+    }
+
+    .lesson {
+        position: fixed;
+        width: 40%;
+        height: 90%;
+        top: 120px;
+        left: 1152px;
+        right: 0;
+        bottom: 0;
+        background-color: #444444;
+        z-index: 2;
+    }
+
+    #submit {
+         background-color: transparent;
+        font-size: 27px;
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+        align-content: center;
+        width: 200px;
+        transition-duration: 0.4s;
+    }
+
+    #submit:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
     form {
@@ -68,6 +151,50 @@
         box-shadow: 1px 1px 1px 1px #1a1a1a;
 
     }
-    /*
-     * Formatting the header area
-     */
+
+      #aboutoverlay {
+        position: fixed;
+        width: 100%;
+        height: 70%;
+        top: 320px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #444444;
+        z-index: 2;
+    }
+
+    #subheading {
+       position: absolute;
+        font-size: 42px;
+        top: 300px;
+        left: 350px;
+        z-index: 100;
+    }
+
+    #abouttext {
+       position: absolute;
+        text-align: center;
+        font-size: 30px;
+        width: 1500px;
+        top: 460px;
+        left: 200px;
+        z-index: 100;
+    }
+
+    #subheading2 {
+       position: absolute;
+        text-align: center;
+        font-size: 42px;
+        top: 620px;
+        left: 650px;
+        z-index: 100;
+    }
+
+    #aboutsignup {
+        position: absolute;
+        left: 800px;
+        top: 800px;
+        z-index: 100;
+
+    }

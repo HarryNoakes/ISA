@@ -2,9 +2,6 @@
 
 {% block content %}
     <h1>Hi, {{ user }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
     <div class = "intro">
         <p>Welcome to is this a phish, the online training tool for improving
             awareness about phishing emails and how to avoid and identify them.
@@ -12,8 +9,10 @@
         </p>
     </div>
     <div class = "homesignin">
-    <button type = "signinbutton">Sign In</button>
-    <button type = "signupbutton">Sign Up</button>
+        <a href="{{ url_for('main.login') }}">
+    <button id = "signinbutton" class="buttonStyle">Sign In</button>
+    <button id = "signupbutton" class="buttonStyle">Sign Up</button>
+        </a>
     </div>
 
 {% endblock %}

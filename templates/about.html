@@ -1,10 +1,14 @@
 {% extends "base.html" %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
-
-</body>
-</html>
+{% block content %}
+<div id = "aboutoverlay"></div>
+    <div id ="subheading"><h1>Phishing education made easy</h1></div>
+    <div id ="abouttext"><p>Is this a phish is an online training tool that aims to educate on how to prevent yourself from becoming the victim of a phishing
+attack. The method of this is by providing sample legitimate and illegitimate emails and allowing the user to identify which ones
+they think are legitimate or illegitimate. The tool also gives educational hints and tests to check your progress.</p></div>
+    <div id ="subheading2"><h1>Find out more</h1></div>
+    <div id = "aboutsignup">
+        <a href="{{ url_for('main.login') }}">
+    <button id = "signupbutton" class="buttonStyle">Sign Up</button>
+        </a>
+    </div>
+{% endblock %}

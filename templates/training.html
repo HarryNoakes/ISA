@@ -1,9 +1,30 @@
 {% extends "base.html" %}
-<head>
-    <title>ISA Training</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='body.css') }}">
-</head>
 {% block content %}
-    <h1>Hi, {{ user }}!</h1>
-    <div><p>sup nerd</p></div>
+    <div id="app">
+        <div class="inboxpanel">
+            <button id = "inboxbtn" class="inboxBtn">Inbox</button>
+            <button id = "realemail" class="inboxBtn">Legitimate Emails</button>
+            <button id = "fakeemail" class="inboxBtn">Phishing Emails</button>
+        </div>
+        <div class="emails">
+            <div class = slot1>
+            </div>
+            <div class = slot2>
+            </div>
+            <div class = slot3>
+            </div>
+            <div class = slot4>
+            </div>
+            <div class = slot5>
+            </div>
+            <div class = slot6>
+            </div>
+            <div class = slot7>
+            </div>
+        </div>
+        <div class="lesson">
+        </div>
+        </div>
+    </div>
 {% endblock %}
+</html>
