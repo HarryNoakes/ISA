@@ -49,8 +49,16 @@ def login():
 
 @main.route('/training')
 def training():
-    return render_template('training.html')
+    email_slots = [{"slot": "slot"+str(x),
+                    "buttonid":"emailBtn"+str(x),
+                    "name":"Email"+str(x),
+                    "ifameid":"email"+str(x),
+                    "src":"email/testemail"+str(x),
+                    "iframename":"iframe"+str(x)
+                    } for x in range(3)]
+    return render_template('training.html', emails=email_slots)
 
-@main.route('/testemail')
-def testemail():
-    return render_template('testemail.html')
+@main.route('/email/<arg1>', methods=['GET'])
+def testemail(arg1):
+
+    return render_template('email/{0}.html'.format(arg1))
