@@ -50,3 +50,7 @@ def login():
 @main.route('/training')
 def training():
     return render_template('training.html')
+
+@main.route('/testemail')
+def testemail():
+    return render_template('testemail.html')
