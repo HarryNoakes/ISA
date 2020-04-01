@@ -7,6 +7,17 @@
 
     }
 
+    .iframes{
+        width: 1000px;
+
+        z-index: 100;
+    }
+
+    .iframes1{
+      width: 1000px;
+
+        z-index: 100;
+    }
     .nav-image {
         background-image: url("images/navbar.jpg");
         min-height: 120px;
@@ -143,7 +154,7 @@
         right: 0;
         bottom: 0;
         background-color: #444444;
-        z-index: 2;
+        z-index: 1;
     }
 
     #submit {

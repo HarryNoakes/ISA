@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
     <div id="app">
         <div class="inboxpanel">
             <button id = "inboxbtn" class="inboxBtn">Inbox</button>
@@ -7,35 +8,15 @@
             <button id = "fakeemail" class="inboxBtn">Phishing Emails</button>
         </div>
         <div class="emails">
+        <script src="/static/js/iframeVisibility.js"></script>
+
             {% for email in emails %}
                 <div class = {{ email['slot'] }}>
-                <button id={{ email['buttonid'] }} class="emailBtn"> {{ email['name'] }}</button>
-                <iframe id={{ email['ifameid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>
+                <button id={{ email['buttonid'] }} class="emailBtn" onclick="toShow(this.id)"> {{ email['name'] }} </button>
+                <iframe style="display:none" class="iframes" id={{ email['iframeid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>
             </div>
             {% endfor %}
-            <!--div class = slot2>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-             <button id="emailBtn1" class="emailBtn">Email1</button>
-             <iframe id ="email1" src="testemail"  name="iframe1"></iframe>
-            <div class = slot3>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-            <div class = slot4>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-            <div class = slot5>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-            <div class = slot6>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-            <div class = slot7>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div>
-            <div class = slot8>
-                <button id="emailBtn1" class="emailBtn">Email1</button>
-            </div-->
+
         </div>
         <div class="lesson">
         </div>
