@@ -8,16 +8,11 @@
     }
 
     .iframes{
-        width: 1000px;
-
+        width: 100%;
+        background: white;
         z-index: 100;
     }
 
-    .iframes1{
-      width: 1000px;
-
-        z-index: 100;
-    }
     .nav-image {
         background-image: url("images/navbar.jpg");
         min-height: 120px;
