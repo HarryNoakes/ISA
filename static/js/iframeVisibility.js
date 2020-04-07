@@ -17,7 +17,7 @@
 <script type="text/javascript">
 
 function updateFrame() {
-var frame = document.getElementById("loopingFrame");
+var frame = document.getElementById("id");
 if(!frame.count)
 {
 frame.count = 1;

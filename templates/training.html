@@ -13,7 +13,8 @@
             {% for email in emails %}
                 <div class = {{ email['slot'] }}>
                 <button id={{ email['buttonid'] }} class="emailBtn" onclick="toShow(this.id)"> {{ email['name'] }} </button>
-                <iframe style="display:none" class="iframes" id={{ email['iframeid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>
+                <iframe style="display:none;" class="iframes" id= emailFrame src ={{ email['src'] }} name={{ email['iframename'] }}></iframe>
+                    <!--<iframe style="display:none" class="iframes" id={{ email['iframeid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>-->
             </div>
             {% endfor %}
 

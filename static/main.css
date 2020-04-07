@@ -9,7 +9,7 @@
 
     .iframes{
         width: 100%;
-        background: white;
+        height: 1000px;
         z-index: 100;
     }
 
