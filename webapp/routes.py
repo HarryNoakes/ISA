@@ -55,7 +55,7 @@ def training():
                     "iframeid":"email"+str(x),
                     "src":"email/testemail"+str(x),
                     "iframename":"iframe"+str(x)
-                    } for x in range(2)]
+                    } for x in range(4)]
     return render_template('training.html', emails=email_slots)
 
 
