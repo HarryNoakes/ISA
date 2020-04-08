@@ -16,14 +16,8 @@
         height: 1000px;
         z-index: 100;
     }
-/**
-    .nav-image {
-        background-image: url("images/navbar.jpg");
-        min-height: 120px;
-        z-index: 100;
 
-    }
-**/
+
     .container {
         width: 100%;
         min-height: 120px;
@@ -53,6 +47,39 @@
         width: 900px;
         margin-left: 210px;
         margin-top: 270px;
+    }
+
+    .lessonTitle {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .lessonTextBox {
+        position: fixed;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: -30px;
+        width: 700px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+     button.lessonBtn {
+        background-color: transparent;
+        font-size: 27px;
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+        margin-top: 100px;
+        margin-left: 90px;
+        margin-right: 50px;
+        width: 220px;
+        transition-duration: 0.4s;
+    }
+
+    button.lessonBtn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
     .homesignin {

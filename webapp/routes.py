@@ -48,6 +48,8 @@ def login():
     return render_template('login.html', title='Sign In', form=form)
 
 @main.route('/training')
+
+
 def training():
     email_slots = [{"slot": "slot"+str(x),
                     "buttonid":"emailBtn"+str(x),
@@ -57,9 +59,12 @@ def training():
                     "iframename":"iframe"+str(x)
                     } for x in range(4)]
     return render_template('training.html', emails=email_slots)
+# add lesson function?
 
 
 @main.route('/email/<arg1>', methods=['GET'])
 def testemail(arg1):
+
+
 
     return render_template('email/{0}.html'.format(arg1))
