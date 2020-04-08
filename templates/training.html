@@ -20,14 +20,15 @@
 
         </div>
         <div class="lesson">
-            <script> src="/static/js/lessonControl.js"</script>
+
             <div class="lessonTitle"><p>Lesson</p></div>
             <div class="lessonTextBox">
                 <p id = "lessonText">Welcome to you lesson introduction, in this space a lesson will appear giving you instructions on what you must do. When are you are ready to get started, please click next lesson.</p>
             </div>
             <div class="lessonBtn">
+                <script> src="/static/js/lessonControl.js"</script>
                 <button id ="previous" class="lessonBtn">Previous Lesson</button>
-                <button id ="nextLesson" onclick='document.getElementById("lessonText").innerHTML ="hello welcome to lesson 1"' class="lessonBtn">Next Lesson</button>
+                <button id ="nextLesson" onclick='document.getElementById("lessonText").innerHTML = "New text!"'; class="lessonBtn">Next Lesson</button>
             </div>
 
         </div>
