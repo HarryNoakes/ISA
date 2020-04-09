@@ -8,7 +8,6 @@
             <button id = "fakeemail" class="inboxBtn">Phishing Emails</button>
         </div>
         <div class="emails">
-        <script src="/static/js/iframeVisibility.js"></script>
 
             {% for email in emails %}
                 <div class = {{ email['slot'] }}>
@@ -26,9 +25,8 @@
                 <p id = "lessonText">Welcome to you lesson introduction, in this space a lesson will appear giving you instructions on what you must do. When are you are ready to get started, please click next lesson.</p>
             </div>
             <div class="lessonBtn">
-                <script> src="/static/js/lessonControl.js"</script>
                 <button id ="previous" class="lessonBtn">Previous Lesson</button>
-                <button id ="nextLesson" onclick='document.getElementById("lessonText").innerHTML = "New text!"'; class="lessonBtn">Next Lesson</button>
+                <button id ="nextLesson" onclick='nextLesson()' class="lessonBtn">Next Lesson</button>
             </div>
 
         </div>
