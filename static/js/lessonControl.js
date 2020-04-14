@@ -46,7 +46,3 @@ else {
     document.getElementById("lessonText").innerHTML ="Welcome to you lesson introduction, in this space a lesson will appear giving you instructions on what you must do. When are you are ready to get started, please click next lesson."
     }
 }
-
-/*for loop counting each button press with i, set whatever i is
-to a lesson text with a limit of 5 counts.
- */

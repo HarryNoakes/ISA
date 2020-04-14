@@ -57,7 +57,7 @@ def training():
                     "iframeid":"email"+str(x),
                     "src":"email/testemail"+str(x),
                     "iframename":"iframe"+str(x)
-                    } for x in range(4)]
+                    } for x in range(9)]
     return render_template('training.html', emails=email_slots)
 # add lesson function?
 
