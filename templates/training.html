@@ -29,9 +29,17 @@
             </div>
         <div class="answerTitle"><p>Answers</div>
             <div class ="answerBox">
-
+                {% for answer in answers %}
+                <div class = {{ answer['slot'] }}>
+                <p id="answerText"> {{ answer['name'] }}</p>
+                 <div class = "answerButtons">
+                    <button id={{ answer['answerid'] }} class="answerBtn" onclick=""> Yes </button>
+                    <button id={{ answer['answerid'] }} class="answerBtn" onclick=""> No </button>
+                </div>
+                    {% endfor %}
 
         </div>
+
         </div>
 
 
