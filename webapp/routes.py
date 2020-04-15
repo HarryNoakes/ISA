@@ -53,7 +53,7 @@ def login():
 def training():
     email_slots = [{"slot": "slot"+str(x),
                     "buttonid":"emailBtn"+str(x),
-                    "name":"Email"+str(x),
+                    "name":"Email "+str(x),
                     "iframeid":"email"+str(x),
                     "src":"email/testemail"+str(x),
                     "iframename":"iframe"+str(x)

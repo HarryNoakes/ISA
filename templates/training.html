@@ -32,9 +32,10 @@
                 {% for answer in answers %}
                 <div class = {{ answer['slot'] }}>
                 <p id="answerText"> {{ answer['name'] }}</p>
+                    <p id = "answerConfirm"></p>
                  <div class = "answerButtons">
-                    <button id={{ answer['answerid'] }} class="answerBtn" onclick=""> Yes </button>
-                    <button id={{ answer['answerid'] }} class="answerBtn" onclick=""> No </button>
+                    <button id={{ answer['answerid'] }} class="answerBtn" onclick='checkAnswer(emailid=this.id, answer=1)'> Yes </button>
+                    <button id={{ answer['answerid'] }} class="answerBtn" onclick='checkAnswer(emailid=this.id, answer=0)'> No </button>
                 </div>
                     {% endfor %}
 

@@ -1,5 +1,6 @@
 var click = 0;
 function nextLesson() {
+    // Make a switch statement plox.
 click ++;
 if (click === 1) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 1."
@@ -8,7 +9,7 @@ else if(click === 2) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 2."
 }
 else if(click === 3) {
-    document.getElementById("lessonText").innerHTML ="Welcome to lesson 3."
+    document.getElementById("lessonText").innerHTML ="Welcome to lesson 3. In todays aksdnsdgdfgjbsdASgljzdfgkndf"
 }
 else if(click === 4) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 4."
