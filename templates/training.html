@@ -1,49 +1,59 @@
 {% extends "base.html" %}
 {% block content %}
-<div class = "trainingScroll">
-    <div id="app">
-        <div class="inboxpanel">
-            <button id = "inboxbtn" class="inboxBtn">Inbox</button>
-            <button id = "realemail" class="inboxBtn">Legitimate Emails</button>
-            <button id = "fakeemail" class="inboxBtn">Phishing Emails</button>
-        </div>
-        <div class="emails">
+    <div class="trainingScroll">
+        <div id="app">
+            <div class="inboxpanel">
+                <button id="inboxbtn" class="inboxBtn">Inbox</button>
+                <button id="realemail" class="inboxBtn">Legitimate Emails</button>
+                <button id="fakeemail" class="inboxBtn">Phishing Emails</button>
+            </div>
+            <div class="emails">
 
-            {% for email in emails %}
-                <div class = {{ email['slot'] }}>
-                <button id={{ email['buttonid'] }} class="emailBtn" onclick="toShow(this.id)"> {{ email['name'] }} </button>
-                <iframe style="display:none;" class="iframes" id= emailFrame src ={{ email['src'] }} name={{ email['iframename'] }}></iframe>
-                    <!--<iframe style="display:none" class="iframes" id={{ email['iframeid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>-->
-            </div>
-            {% endfor %}
+                {% for email in emails %}
+                    <div class= {{ email['slot'] }}>
+                        <button id={{ email['buttonid'] }} class="emailBtn"
+                                onclick="toShow(this.id)"> {{ email['name'] }} </button>
+                        <iframe style="display:none;" class="iframes" id=emailFrame
+                                src={{ email['src'] }} name={{ email['iframename'] }}></iframe>
+                        <!--<iframe style="display:none" class="iframes" id={{ email['iframeid'] }} src={{ email['src'] }} name={{ email['iframename'] }}></iframe>-->
+                    </div>
+                {% endfor %}
 
-        </div>
-        <div class="lesson">
-            <div class="lessonTitle"><p>Lesson</p></div>
-            <div class="lessonTextBox">
-                <p id = "lessonText">Welcome to you lesson introduction, in this space a lesson will appear giving you instructions on what you must do. When are you are ready to get started, please click next lesson.</p>
             </div>
-            <div class="lessonBtn">
-                <button id ="previous" onclick='prevLesson()' class="lessonBtn">Previous Lesson</button>
-                <button id ="nextLesson" onclick='nextLesson()' class="lessonBtn">Next Lesson</button>
-            </div>
-        <div class="answerTitle"><p>Answers</div>
-            <div class ="answerBox">
-                {% for answer in answers %}
-                <div class = {{ answer['slot'] }}>
-                <p id="answerText"> {{ answer['name'] }}</p>
-                    <p id = "answerConfirm"></p>
-                 <div class = "answerButtons">
-                    <button id={{ answer['answerid'] }} class="answerBtn" onclick='checkAnswer(emailid=this.id, answer=1)'> Yes </button>
-                    <button id={{ answer['answerid'] }} class="answerBtn" onclick='checkAnswer(emailid=this.id, answer=0)'> No </button>
+            <div class="lesson">
+                <div class="lessonTitle"><p>Lesson</p></div>
+                <div class="lessonTextBox">
+                    <p id="lessonText">Welcome to you lesson introduction, in this space a lesson will appear giving you
+                        instructions on what you must do. When are you are ready to get started, please click next
+                        lesson.</p>
                 </div>
+                <div class="lessonBtn">
+                    <button id="previous" onclick='prevLesson()' class="lessonBtn">Previous Lesson</button>
+                    <button id="nextLesson" onclick='nextLesson()' class="lessonBtn">Next Lesson</button>
+                </div>
+                <div class="answerTitle"><p>Answers</div>
+                <div class="answerBox">
+                    {% for answer in answers %}
+                        <div class= {{ answer['slot'] }}>
+                            <p id="answerText"> {{ answer['name'] }}</p>
+                            <p id= {{ answer['answerConfirm'] }}></p>
+                            <div id={{ answer['answerButtons'] }} class="answerButtons">
+                                <button id={{ answer['answerid'] }} class="answerBtn"
+                                        onclick='checkAnswer(emailid=this.id, answer=1)'> Yes
+                                </button>
+                                <button id={{ answer['answerid'] }} class="answerBtn"
+                                        onclick='checkAnswer(emailid=this.id, answer=0)'> No
+                                </button>
+                            </div>
+                        </div>
                     {% endfor %}
 
-        </div>
+            </div>
 
         </div>
 
 
-        </div>
-</div>
+    </div>
+    </div>
+    </div>
 {% endblock %}

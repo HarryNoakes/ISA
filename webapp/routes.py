@@ -57,11 +57,13 @@ def training():
                     "iframeid":"email"+str(x),
                     "src":"email/testemail"+str(x),
                     "iframename":"iframe"+str(x)
-                    } for x in range(1, 9)]
+                    } for x in range(1, 10)]
     #replicate email slots with answer slots?
     answer_slots = [{"slot": "slot" + str(y),
+                     "answerButtons":"answerButtons" + str(y),
                      "answerid":"answerBtn:"+str(y),
-                     "name":"Is Email "+str(y)+" a phishing email?" } for y in range(1, 9)]
+                     "answerConfirm":"answerConfirm"+str(y),
+                     "name":"Is Email "+str(y)+" a phishing email?" } for y in range(1, 10)]
     return render_template('training.html', emails=email_slots, answers=answer_slots)
 
 
