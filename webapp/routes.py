@@ -47,9 +47,8 @@ def login():
         return redirect(url_for('main.index'))
     return render_template('login.html', title='Sign In', form=form)
 
+
 @main.route('/training')
-
-
 def training():
     email_slots = [{"slot": "slot"+str(x),
                     "buttonid":"emailBtn"+str(x),
@@ -58,7 +57,7 @@ def training():
                     "src":"email/testemail"+str(x),
                     "iframename":"iframe"+str(x)
                     } for x in range(1, 10)]
-    #replicate email slots with answer slots?
+
     answer_slots = [{"slot": "slot" + str(y),
                      "answerButtons":"answerButtons" + str(y),
                      "answerid":"answerBtn:"+str(y),
