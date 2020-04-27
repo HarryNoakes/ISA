@@ -19,7 +19,7 @@ function checkAnswer(emailid, answer) {
         paragraph.appendChild(text);
     }
     else{
-        //something is not right, handle this exception
+        //something is not right
 
     }
     console.log(emailid);
@@ -29,7 +29,6 @@ function checkAnswer(emailid, answer) {
         var child = buttons.childNodes[i];
         //child.remove();
     }
-    //This is really gross and I hate myself for it.
     document.getElementById(emailid).remove();
     document.getElementById(emailid).remove();
 }
