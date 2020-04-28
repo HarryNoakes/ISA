@@ -14,7 +14,7 @@ else if(click === 4) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 4. In this lesson, you have received a notification of a tax refund from the government. In this email take note of what information is displayed and if any of it is sensitive or not, legitimate emails will never contain sensitive information."
 }
 else if(click === 5) {
-    document.getElementById("lessonText").innerHTML ="Welcome to lesson 5. In this lesson you have been given a selection of five emails. These emails are emails 5 through 9, you must apply your the four previous lessons to succeed. When you are ready start open the first email."
+    document.getElementById("lessonText").innerHTML ="Welcome to lesson 5. In this lesson you have been given a selection of five emails. These emails are emails 5 through 9, you must apply your knowledge of the four previous lessons to succeed. When you are ready open the first email."
 }
 else if(click === 6) {
     click = 5;
@@ -37,7 +37,7 @@ else if(click === 4) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 4. In this lesson, you have received a notification of a tax refund from the government. In this email take note of what information is displayed and if any of it is sensitive or not, legitimate emails will never contain sensitive information."
 }
 else if(click === 5) {
-    document.getElementById("lessonText").innerHTML ="Welcome to lesson 5. In this lesson you have been given a selection of five emails. These emails are emails 5 through 9, you must apply your the four previous lessons to succeed. When you are ready start open the first email."
+    document.getElementById("lessonText").innerHTML ="Welcome to lesson 5. In this lesson you have been given a selection of five emails. These emails are emails 5 through 9, you must apply your knowledge of the four previous lessons to succeed. When you are ready open the first email."
 }
 else if (click === -1) {
     click = 0;
