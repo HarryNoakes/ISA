@@ -2,7 +2,7 @@ function checkAnswer(emailid, answer) {
     // Replaces all non-digts with whitespace.
     var newEmailId = emailid.replace( /^\D+/g, '');
     var results =
-            '{"testemail1":0,"testemail2":0,"testemail3":0,"testemail4":0,"testemail5":1,"testemail6":0,"testemail7":0,"testemail8":0,"testemail9":1}';
+            '{"testemail1":0,"testemail2":1,"testemail3":0,"testemail4":1,"testemail5":0,"testemail6":1,"testemail7":0,"testemail8":0,"testemail9":1}';
     var resultsParsed = JSON.parse(results);
     var correctAnswer = resultsParsed["testemail"+newEmailId];
 
