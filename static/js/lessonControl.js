@@ -1,6 +1,5 @@
 var click = 0;
 function nextLesson() {
-    // Make a switch statement plox.
 click ++;
 if (click === 1) {
     document.getElementById("lessonText").innerHTML ="Welcome to lesson 1. In this lesson, you have received a password reset email, your task is to identify whether it is a phishing email or not. The focus of this lesson is to look at how they address the receiver. Phishing emails will rarely use your name or an account name, when you are ready to start, open email one and answer in the answer box."
