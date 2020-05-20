@@ -26,7 +26,7 @@
 
 
         .container {
-            width: 100%;
+            width: 1903px;
             min-height: 120px;
             background-image: url("images/navbar.jpg");
         }
@@ -174,7 +174,7 @@
             padding: 10px;
             margin-left: 0px;
             margin-top: 0px;
-            width: 100%;
+            width: 773px;
             /** change height to 100% at later date **/
             height: 107px;
             transition-duration: 0.4s;
@@ -194,7 +194,7 @@
 
         .inboxpanel {
             position: absolute;
-            width: 20%;
+            width: 380px;
             min-width: 380px;
             height: 5000px;
             top: 120px;
@@ -207,7 +207,7 @@
 
         .emails {
             position: relative;
-            width: 40.6%;
+            width: 772px;
             min-width: 772px;
             height: 90%;
             left: 380px;
@@ -219,7 +219,7 @@
 
         .lesson {
             position: absolute;
-            width: 39.5%;
+            width: 751px;
             height: 5000px;
             top: 120px;
             left: 1152px;
@@ -262,9 +262,11 @@
         }
 
         #aboutoverlay {
-            position: fixed;
-            width: 100%;
-            height: 70%;
+            position: absolute;
+            width: 1903px;
+            height: 346px;
+            min-width: 1903px;
+            min-height: 658px;
             top: 320px;
             left: 0;
             right: 0;
